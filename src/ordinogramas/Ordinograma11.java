@@ -1,3 +1,4 @@
+package ordinogramas;
 import java.util.Scanner;
 
 public class Ordinograma11 {
@@ -19,12 +20,17 @@ public class Ordinograma11 {
 		if (hora<=35) 
 			{
 			salBruto = euroHora * hora;
+			impuesto1=0;
+			impuesto2=0;
+					
 			}
 		else 
 			{
 			salBruto = (euroHora * 35) + (euroHora * hora * 1.5);
+			impuesto1=0;
+			impuesto2=0;
 			}
-		System.out.println("Su salario bruto es " + salBruto);
+		System.out.println("Su salario bruto es " + salBruto + " euros");
 		if (salBruto<=500) 
 			{
 			salNeto = salBruto;
@@ -39,6 +45,8 @@ public class Ordinograma11 {
 			impuesto2= (salBruto - 900)*0.45;
 			}
 		salNeto = salBruto - impuesto1 - impuesto2;
+		System.out.println("Su salario neto es " + salNeto + " euros");
+		teclado.close();
 	}
 
 }
