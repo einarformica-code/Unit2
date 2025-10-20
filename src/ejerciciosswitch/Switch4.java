@@ -8,8 +8,8 @@ public class Switch4 {
 		// TODO Auto-generated method stub
 		String primeraTirada;
 		String segundaTirada;
-		int valorNumPrimeraTirada;
-		int valorNumSegundaTirada;
+		int valorNumPrimeraTirada=0;
+		int valorNumSegundaTirada=0;
 		int valorNumTotal;
 		
 		Scanner teclado= new Scanner(System.in);
@@ -39,7 +39,8 @@ public class Switch4 {
 		
 		
 		System.out.println("¿Cuánto has sacado en tu segunda tirada?");
-		switch(primeraTirada){
+		segundaTirada = teclado.next();
+		switch(segundaTirada){
 		case "Uno":
 			valorNumSegundaTirada=1;
 			break;
@@ -57,11 +58,10 @@ public class Switch4 {
 			break;
 		case "Seis" :
 			valorNumSegundaTirada=6;
-			break;
-			valorNumTotal = valorNumPrimeraTirada + valorNumSegundaTirada;
-			System.out.println("La suma de las dos tiradas es " + valorNumTotal);
-			}
+			break;}
 		
+		valorNumTotal = valorNumPrimeraTirada + valorNumSegundaTirada;
+		System.out.println("La suma de las dos tiradas es " + valorNumTotal);
 		
 		
 		
