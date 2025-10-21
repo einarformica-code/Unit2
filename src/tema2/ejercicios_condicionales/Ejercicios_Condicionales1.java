@@ -29,7 +29,19 @@ public class Ejercicios_Condicionales1 {
 				System.out.println("No es capicua");
 			}
 		}else if (num>=1000 && num<10000) {
+			int n1= num%10;
+			int n2=((num%100) -n1)/10; 
+			//N2 es el segundo número leyendo de derecha a izquierda. Equivale al resto el INPUT resultante de ser dividido entre 100 MENOS n1(el primer numero de derecha a izquierda)
+			int n3= (num%1000 - n2)/100;
+			int n4=num/1000;
+			if (n1==n4 && n2==n3) {
+				System.out.println("El numero es capicua");
+			}else {
+				System.out.println("El número no es capicua");
+			}
 			
+		}else {
+			System.out.println("El número no entra en el rango definido");
 		}
 			
 		
