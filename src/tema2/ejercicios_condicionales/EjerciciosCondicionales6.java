@@ -22,8 +22,29 @@ public class EjerciciosCondicionales6 {
 		System.out.println("Mes");
 		mes = teclado.nextInt();
 		
-		if (bisiesto && mes==2) {
-			diasMes
+		diasMes = switch (mes) {
+		case 1-> {
+			yield 10;
+		}
+		case 2->{
+			yield 28;
+		}
+		case 3->{
+			yield 31;
+		}
+		case 4->{
+			yield 30;
+		}
+		case 5 ->{
+			yield 31;
+		}
+		case 6->{
+			yield 30;
+			}
+		case 7->{
+			yield 31;s
+		}
+		};
 		
 	}
 
