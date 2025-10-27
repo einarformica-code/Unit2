@@ -42,10 +42,32 @@ public class EjerciciosCondicionales6 {
 			yield 30;
 			}
 		case 7->{
-			yield 31;s
+			yield 31;
 		}
-		};
+		case 8->{
+		yield 31;
+		}
+		case 9 ->{
+			yield 30;
+		}
+		case 10->{
+			yield 31;
+		}
+		case 11->{
+			yield 30;
+		}
+		default ->{
+			yield 31;
+				
+			}
 		
+		
+		};
+		if (bisiesto && mes==2) {
+			diasMes= 29;
+			
+		}
+		System.out.println(diasMes);
 	}
 
 }
