@@ -20,10 +20,10 @@ public class Conditionals_English_Exercises_3 {
 		System.out.println("Write the hour first (0-12) and the minutes afterwards");
 		mirrorHour = keyboard.nextInt();
 		mirrorMin = keyboard.nextInt();
-		System.out.println("pm or am? Use lowercase");
+		
 		
 		if (mirrorHour >11) {
-			System.out.println("La houede ser mayor que 11, ten en cuenta que 12 será escrito como 00");;
+			System.out.println("La hora ser mayor que 11, ten en cuenta que 12 será escrito como 00");;
 		}else {
 			realHour = (mirrorMin == 0) ? (12 - mirrorHour) : (11 - mirrorHour);
 		}
@@ -33,6 +33,7 @@ public class Conditionals_English_Exercises_3 {
 			realMin = (mirrorMin == 0) ? 0 : (60 - mirrorMin);
 			
 		}
+		System.out.println(realHour + ":" +realMin);
 
 		
 		 
