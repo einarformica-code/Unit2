@@ -1,11 +1,9 @@
-package ejerciciosswitch;
+package unidad2.dowhile;
 
 import java.util.Scanner;
 
-public class Switch4 {
-
+public class Ejercicio8 {
 	public static void main(String[] args) {
-		
 		String primeraTirada;
 		String segundaTirada;
 		int valorNumPrimeraTirada=0;
@@ -13,9 +11,10 @@ public class Switch4 {
 		int valorNumTotal;
 		
 		Scanner teclado= new Scanner(System.in);
-		
+		do {
 		System.out.println("¿Cuánto has sacado en tu primera tirada?");
 		primeraTirada = teclado.next();
+		
 		switch(primeraTirada){
 		case "Uno":
 			valorNumPrimeraTirada=1;
@@ -35,9 +34,12 @@ public class Switch4 {
 		case "Seis" :
 			valorNumPrimeraTirada=6;
 			break;}
-		
-		
-		
+		}while(!primeraTirada.equals("Uno") && !primeraTirada.equals("Dos") &&
+				!primeraTirada.equals("Tres") && !primeraTirada.equals("Cuatro") && 
+				!primeraTirada.equals("Cinco") && !primeraTirada.equals("Seis") );
+		//repetir el bucle mientras que la segunda tirada no equivalga a Uno, Dos, Tres, Cuatro, Cinco o Seis 
+
+		do{
 		System.out.println("¿Cuánto has sacado en tu segunda tirada?");
 		segundaTirada = teclado.next();
 		switch(segundaTirada){
@@ -59,12 +61,13 @@ public class Switch4 {
 		case "Seis" :
 			valorNumSegundaTirada=6;
 			break;}
-		
+		}while (!segundaTirada.equals("Uno") && !segundaTirada.equals("Dos") &&
+				!segundaTirada.equals("Tres") && !segundaTirada.equals("Cuatro") &&
+				!segundaTirada.equals("Cinco") && !segundaTirada.equals("Seis") );
+		//repetir el bucle mientras que la segunda tirada no equivalga a Uno, Dos, Tres, Cuatro, Cinco o Seis 
 		valorNumTotal = valorNumPrimeraTirada + valorNumSegundaTirada;
 		System.out.println("La suma de las dos tiradas es " + valorNumTotal);
 		
 		
-		
 	}
-
 }
