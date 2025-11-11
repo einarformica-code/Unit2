@@ -12,15 +12,18 @@ public static void main(String[] args) {
 	int contadorNumero;
 	int sumaImpares = 0;
 	
-	for (contadorNumero=0; contadorImpar<10; contadorNumero++) {
-		
-		if (contadorNumero %2 !=0) {
-			contadorImpar++;
+	System.out.println("Por que número quieres empezar la suma de los proximos 20 numeros impares ");
+	int numeroInicio = teclado.nextInt();
+	for (contadorNumero=numeroInicio; contadorImpar<10; contadorNumero++) {
+		if (contadorNumero %2 != 0) {
+			contadorImpar ++;
 			sumaImpares += contadorNumero;
+			System.out.print(contadorNumero + "  + ");
+			
 		}
 		
 	}
-	System.out.println("La suma de los 10 primeros números impares es " + sumaImpares);
+	System.out.println(" = " + sumaImpares);
 	
 	
 }
