@@ -1,4 +1,4 @@
-package ordinogramas;
+package boletin1.ifelse;
 
 import java.util.Scanner;
 
